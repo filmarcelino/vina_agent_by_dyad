@@ -214,7 +214,7 @@ export const MODEL_OPTIONS: Record<string, ModelOption[]> = {
 };
 
 export const PROVIDER_TO_ENV_VAR: Record<string, string> = {
-  openai: "OPEN_AI_KEY",
+  openai: "OPENAI_API_KEY",
   anthropic: "ANTHROPIC_API_KEY",
   google: "GEMINI_API_KEY",
   openrouter: "OPENROUTER_API_KEY",

@@ -1047,7 +1047,7 @@ export const test = base.extend<{
       process.env.DYAD_GATEWAY_URL = "http://localhost:3500/gateway/v1";
       process.env.E2E_TEST_BUILD = "true";
       // This is just a hack to avoid the AI setup screen.
-      process.env.OPEN_AI_KEY = "sk-test";
+      process.env.OPENAI_API_KEY = "sk-test";
       const baseTmpDir = os.tmpdir();
       const userDataDir = path.join(baseTmpDir, `dyad-e2e-tests-${Date.now()}`);
       if (electronConfig.preLaunchHook) {

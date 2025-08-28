@@ -1,8 +1,8 @@
 {
-  "name": "vina-agent",
-  "productName": "vina-agent",
+  "name": "dyad",
+  "productName": "dyad",
   "version": "0.19.0-beta.1",
-  "description": "Proprietary vina.dev AI app builder",
+  "description": "Free, local, open-source AI app builder",
   "main": ".vite/build/main.js",
   "repository": {
     "type": "git",
