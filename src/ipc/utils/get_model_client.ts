@@ -29,7 +29,7 @@ const AUTO_MODELS = [
   },
   {
     provider: "openai",
-    name: "gpt-5",
+    name: "gpt-4.1",
   },
 ];
 

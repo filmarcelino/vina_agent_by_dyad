@@ -78,7 +78,7 @@ describe("readSettings", () => {
     it("should read and merge settings with defaults", () => {
       const mockFileContent = {
         selectedModel: {
-          name: "gpt-5",
+          name: "gpt-4",
           provider: "openai",
         },
         telemetryConsent: "opted_in",
@@ -95,7 +95,7 @@ describe("readSettings", () => {
         "utf-8",
       );
       expect(result.selectedModel).toEqual({
-        name: "gpt-5",
+        name: "gpt-4",
         provider: "openai",
       });
       expect(result.telemetryConsent).toBe("opted_in");
@@ -247,7 +247,7 @@ describe("readSettings", () => {
     it("should strip extra fields not recognized by the schema", () => {
       const mockFileContent = {
         selectedModel: {
-          name: "gpt-5",
+          name: "gpt-4",
           provider: "openai",
         },
         telemetryConsent: "opted_in",
@@ -271,7 +271,7 @@ describe("readSettings", () => {
         "utf-8",
       );
       expect(result.selectedModel).toEqual({
-        name: "gpt-5",
+        name: "gpt-4",
         provider: "openai",
       });
       expect(result.telemetryConsent).toBe("opted_in");
@@ -337,7 +337,7 @@ describe("readSettings", () => {
     it("should return default settings when schema validation fails", () => {
       const mockFileContent = {
         selectedModel: {
-          name: "gpt-5",
+          name: "gpt-4",
           // Missing required 'provider' field
         },
         releaseChannel: "invalid-channel", // Invalid enum value
